@@ -1,9 +1,15 @@
-from pocketsphinx import LiveSpeech
 import json
 import os
 import re
+# https://pypi.org/project/pocketsphinx/
+from pocketsphinx import LiveSpeech
+
 
 class Interpreter():
+
+    """
+    Listens to the user's voice and interprets their commands.
+    """
     
     def __init__(self, **kwargs):    
         params = {"voice_bindings_path": "voice_bindings.json"}
@@ -15,6 +21,10 @@ class Interpreter():
 
 
     def start(self):
+
+        """
+        Enters listen-execute loop.
+        """
         for phrase in LiveSpeech():
             print(phrase)
             

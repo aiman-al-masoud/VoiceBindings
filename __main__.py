@@ -1,5 +1,7 @@
-# https://pypi.org/project/pocketsphinx/
-
 from interpreter import Interpreter
-                                                                     
-Interpreter().start()                                       
+
+def __main__():
+    Interpreter().start()                                       
+
+if __name__=="__main__":
+    __main__()
