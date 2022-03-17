@@ -30,7 +30,6 @@ class Interpreter():
                     for i in range(10):
                         os.system(command)
 
-
                 except:
                     print("unrecognized voice-binding!")
 

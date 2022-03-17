@@ -2,7 +2,7 @@
     "down" : "xdotool key Down",
     "up" : "xdotool key Up",
     "yes" : "xdotool key Up",
-    "op" : "key Up+Up",
+    "op" : "key Up",
     "right" : "xdotool key Right",
     "left" : "xdotool key Left",
     "return" : "xdotool key Return",
